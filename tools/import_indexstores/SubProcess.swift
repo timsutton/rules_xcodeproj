@@ -16,6 +16,7 @@ import Foundation
         task.standardError = Pipe()
     }
 
+    // https://github.com/swiftlang/swift-corelibs-foundation/blob/c5421808a0f907169e605674b4672b9e98390d65/Sources/Foundation/Operation.swift#L45-L51
     let backgroundQueue = DispatchQueue.global(qos: .background)
 
     backgroundQueue.sync {
